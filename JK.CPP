@@ -1,0 +1,50 @@
+
+#include<dos.h>
+#include<conio.h>
+#include<graphics.h>
+void main()
+{
+  int gd=DETECT,gm,i;
+  initgraph(&gd,&gm,"c:\\TURBOC3\\BGI");
+  for(i=0;i<40;i++)
+  {
+   delay(70);
+   cleardevice();
+  line(10,420,610,420);
+  circle(40+i,300,25);
+  bar3d(38+i,325,42+i,375,3,1);
+  line(38+i,375,30+i,420);
+  line(42+i,375,50+i,420);
+  line(40+i,330,70+i,360);
+  circle(55+i,295,4);              //boy
+  circle(56+i,295,2);
+  arc(54+i,312,227,-40,6);
+  line(70+i,360,85+i,350);
+  circle(88+i,346,3);
+  line(88+i,346,88+i,230);
+  arc(88+i,250,0,180,60);
+  arc(128+i,250,0,180,20);
+  arc(48+i,250,0,180,20);
+  arc(88+i,250,0,180,20);
+
+
+
+ // delay(100);
+ // cleardevice();
+ /* circle(580,300,25);
+  bar3d(578,325,582,375,3,1);
+  line(578,375,570,420);
+  line(582,375,590,420);
+  line(580,330,550,360);
+  circle(565,300,4);
+  circle(564,300,2);
+  arc(566,312,223,-48,6);
+ // bar3d(550,360,500,365,3,2);
+ // outtextxy(502-i,360,"TUTORIAL");//  */
+
+ }
+
+
+
+  getch();
+  }
