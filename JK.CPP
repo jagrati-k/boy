@@ -1,6 +1,7 @@
 
 #include<dos.h>
 #include<conio.h>
+#include<stdio.h>
 #include<graphics.h>
 void main()
 {
